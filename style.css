@@ -235,6 +235,16 @@ p {
   .interest ul {
     grid-template-columns: repeat(2, 1fr);
   }
+  .info,
+  .education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contactInfo.language h3 {
+    text-align: center;
+  }
 }
 @media (max-width: 600px) {
   .about .box {
