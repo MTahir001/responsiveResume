@@ -33,7 +33,7 @@ body {
 
 .left_side {
   position: relative;
-  padding: 40px;
+  padding: 30px;
   background: #003147;
 }
 
@@ -223,11 +223,20 @@ p {
 }
 .interest ul li .fa {
   color: #03a9fa;
-  width: 20px;
+  width: 40px;
   font-size: 18px;
 }
 
 @media (max-width: 1000px) {
+  .contactInfo.info{
+    margin-right: 20px;
+  }
+  .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 500px;
+  }
   .container {
     margin: 10px;
     grid-template-columns: repeat(1, 1fr);
@@ -247,6 +256,13 @@ p {
   }
 }
 @media (max-width: 600px) {
+   .contactInfo.info{
+    margin: 0;
+  }
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+  }
   .about .box {
     flex-direction: column;
   }
